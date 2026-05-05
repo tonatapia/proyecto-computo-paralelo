@@ -1,0 +1,12 @@
+Dataset ECG:
+PEGA_AQUI_EL_LINK_DE_DRIVE
+
+Archivos principales:
+- train.csv
+- test.csv
+- carpeta train/
+- carpeta test/
+
+Instrucción:
+Descargar todo el contenido del Drive y colocarlo en:
+data/raw/
