@@ -1,7 +1,5 @@
 Dataset original sin limpiar ni modificar:
 
-https://drive.google.com/drive/folders/17RQoFd68nZ_2OdpJ0Ikk2rJYjk1Nf_Q7?usp=sharing
-
+https://www.kaggle.com/datasets/shayanfazeli/heartbeat
 Nota:
-Este enlace corresponde al dataset original almacenado en Google Drive.
 No se sube directamente a GitHub porque el archivo puede ser pesado.
