@@ -1,0 +1,2 @@
+modo,modelo,procesos,n_estimators,n_jobs,tiempo_entrenamiento,tiempo_prediccion,tiempo_total,accuracy,precision_macro,recall_macro,f1_macro,precision_weighted,recall_weighted,f1_weighted
+secuencial,Random Forest,1,100,1,21.83064556121826,0.0679163932800293,21.89856195449829,0.9652888787394382,0.9425905327206863,0.7657195886989641,0.8361650160851776,0.9649362514399856,0.9652888787394382,0.9628823927721025
