@@ -1,0 +1,39 @@
+Reporte de la simulación del cluster (MPI)
+
+Busqueda rapida de hiperparametros con una muestras del 2% con las 180 combinaciones
+
+Mejor configuración:
+- Árboles (n_estimators): 50
+- Profundidad (max_depth): 10
+- Min Samples Split: 2
+- Criterio: gini
+- Pesos de Clase: balanced
+
+Métricas:
+- Exactitud: 0.9817
+- F1-Score: 0.9821
+- Recall: 0.9817
+
+Tiempos (2%):
+- 1 Núcleo: 228.55 segundos
+- 6 Núcleos: 80.77 segundos
+- 11 Núcleos: 67.61 segundos
+
+
+Prueba de estrés simple con muetra del 15%
+Se subio la carga de trabajo para validar que tanto impacta en la paralelización de cargas masivas. 
+El nodo secuencial de 1 núcleo fue omitido por falta de tiempo ya que se estima en más de 3 horas.
+
+Métricas:
+- Exactitud: 0.9674
+- F1-Score: 0.9654
+- Recall: 0.9674
+
+Tiempos:
+- 6 Núcleos: 1766.78 segundos
+- 11 Núcleos: 973.06 segundos
+
+CONCLUSIÓN DE ESCALABILIDAD:
+Al pasar de 6 a 11 núcleos en la prueba de estrés, el tiempo de ejecución se redujo casi a la mitad, 
+por lo que con la totalidad de los datos esta arquitectura Maestro-Trabajador 
+puede funcionar para reducir el tiempo de procesamiento.
