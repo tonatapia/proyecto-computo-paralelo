@@ -30,8 +30,8 @@ Métricas:
 - Recall: 0.9674
 
 Tiempos:
-- 6 Núcleos: 1766.78 segundos
-- 11 Núcleos: 973.06 segundos
+- 6 Núcleos: 1566.78 segundos
+- 11 Núcleos: 773.06 segundos
 
 CONCLUSIÓN DE ESCALABILIDAD:
 Al pasar de 6 a 11 núcleos en la prueba de estrés, el tiempo de ejecución se redujo casi a la mitad, 
