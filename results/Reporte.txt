@@ -33,7 +33,30 @@ Tiempos:
 - 6 Núcleos: 1566.78 segundos
 - 11 Núcleos: 773.06 segundos
 
-CONCLUSIÓN DE ESCALABILIDAD:
-Al pasar de 6 a 11 núcleos en la prueba de estrés, el tiempo de ejecución se redujo casi a la mitad, 
-por lo que con la totalidad de los datos esta arquitectura Maestro-Trabajador 
-puede funcionar para reducir el tiempo de procesamiento.
+
+
+Prueba completa con el 100% del dataset
+
+Con el objetivo de validar el comportamiento de la arquitectura Maestro-Trabajador bajo una carga de trabajo real, se ejecutó la búsqueda completa de hiperparámetros utilizando la totalidad de la base de datos MIT-BIH y las 180 combinaciones del Grid Search.
+
+La mejor configuración encontrada fue:
+
+Árboles (n_estimators): 250
+Profundidad (max_depth): None
+Min Samples Split: 10
+Criterio: entropy
+Pesos de Clase: balanced
+
+Métricas obtenidas:
+
+Exactitud (Accuracy): 0.9767
+F1-Score (Ponderado): 0.9754
+Recall: 0.9767
+
+Tiempos de ejecución medidos experimentalmente:
+
+3 Núcleos: 11223.31 segundos
+8 Núcleos: 6356.63 segundos
+11 Núcleos: 5500.71 segundos
+
+Los resultados muestran una reducción progresiva del tiempo de procesamiento conforme aumenta el número de procesos MPI utilizados. Al comparar las ejecuciones con 3 y 11 núcleos, el tiempo total se redujo de 11223.31 a 5500.71 segundos, lo que representa una disminución aproximada del 51%.
